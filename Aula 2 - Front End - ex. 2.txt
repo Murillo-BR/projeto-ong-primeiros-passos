@@ -1,0 +1,64 @@
+/* ===== GRID - PROJETOS ===== */
+.projetos-voluntariado {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--espacamento-medio);
+}
+
+.projetos-voluntariado article {
+  grid-column: span 4;
+}
+
+/* ===== MEDIA QUERIES (Responsividade) ===== */
+
+/* Celular pequeno */
+@media (max-width: 480px) {
+  .projetos-voluntariado article {
+    grid-column: span 12;
+  }
+}
+
+/* Celular grande */
+@media (max-width: 600px) {
+  .projetos-voluntariado article {
+    grid-column: span 12;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .projetos-voluntariado article {
+    grid-column: span 6;
+  }
+}
+
+/* Notebook/Desktop padrão */
+@media (max-width: 1024px) {
+  .projetos-voluntariado article {
+    grid-column: span 4;
+  }
+}
+
+/* Desktop grande (panorâmico) */
+@media (min-width: 1200px) {
+  .projetos-voluntariado article {
+    grid-column: span 4;
+  }
+  .projetos-voluntariado {
+    gap: var(--espacamento-grande);
+  }
+}
+
+
+
+
+
+Os 5 pontos de quebra foram pensados para o uso em diferentes dispositivos, com as seguintes estruturas:
+
+Celular pequeno — até 480px: os itens do grid ocupam a largura total (12 colunas), mantendo-se empilhados verticalmente.
+Celular grande — até 600px: mesma estrutura do celular pequeno, itens empilhados ocupando a largura total.
+Tablet — até 768px: cada item passa a ocupar 6 colunas (metade da grade de 12), resultando em 2 itens por linha; o terceiro item ocupa a linha seguinte automaticamente.
+Notebook/Desktop padrão — até 1024px: cada item ocupa 4 colunas, permitindo que os 3 itens fiquem lado a lado na mesma linha.
+Desktop grande/panorâmico — acima de 1200px: mantém a mesma distribuição de 3 itens por linha (4 colunas cada), porém com o espaçamento (gap) aumentado, aproveitando melhor o espaço disponível em telas maiores.
+
+Essa estrutura de breakpoints tem como objetivo permitir que o site seja acessado com boa experiência independentemente do dispositivo utilizado.

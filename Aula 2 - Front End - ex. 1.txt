@@ -1,0 +1,38 @@
+:root {
+  /* ===== CORES ===== */
+  /* Primárias */
+  --cor-destaque: #1b4332;       /* verde escuro */
+  --cor-acao: #472b0c;           /* marrom */
+  --cor-navegacao: #c9a876;      /* areia escuro */
+
+  /* Secundárias */
+  --cor-atencao: #40916c;        /* verde claro */
+  --cor-caixa: #a59c94;          /* marrom claro */
+  --cor-navegacao-fotos: #f3d4a1; /* areia claro */
+
+  /* Neutras */
+  --cor-fundo-bloco: #3a3a3a;    /* cinza escuro */
+  --cor-fundo-texto: #ffffff;    /* branco */
+  --cor-texto: #000000;          /* preto */
+
+  /* ===== TIPOGRAFIA ===== */
+  --fonte-grande: 4rem;          /* h1 */
+  --fonte-media: 2.8rem;         /* h2 */
+  --fonte-media-pequena: 2rem;   /* h3 */
+  --fonte-pequena: 1.5rem;       /* texto normal (p) */
+  --fonte-minima: 1rem;          /* rodapé, copyright */
+
+  /* ===== ESPAÇAMENTOS ===== */
+  --espacamento-pequeno: 0.5rem;          /* entre linhas de texto */
+  --espacamento-medio: 2rem;              /* entre subtítulos e textos */
+  --espacamento-grande: 4rem;             /* entre títulos e subtítulos */
+  --espacamento-blocos-horizontal: 6rem;  /* entre blocos/seções (horizontal) */
+  --espacamento-blocos-vertical: 6rem;    /* entre blocos/seções (vertical) */
+}
+
+
+O CSS desenvolvido até o momento tem como objetivo principal deixar a página com boa fluidez, levando em consideração as boas práticas de acessibilidade e navegação.
+
+Para a escolha das cores, foi pensado em um padrão de cores que represente o objetivo da ONG que é o crescimento, desenvolvimento e evolução, com as tonalidades de verde e marrom, conforme estrutura apresentada, além de pensar nas dificuldades de visão que algumas pessoas podem apresentar, para ir de acordo com o contraste de cores WCAG. Em relação à acessibilidade, foi pensado em utilizar o tamanho rem, pois ele é melhor recomendado no caso de pessoas com baixa visibilidade e que utilizem fontes maiores em suas telas. Além disso, as estruturas sobre como os textos são organizados (header, h1, h2, h3, etc) favorecem a compreensão do que tem na página por ferramentas de leitura.
+
+A estrutura foi pensada para difundir melhor a utilização da página, facilitando a navegação a partir da compartimentação dos textos, imagens e informações, e deixando com maior destaque os pontos que visam a apresentação da ONG. Dessa forma, as pessoas, desde jovens até idosos, conseguirão utilizá-la sem dificuldades.

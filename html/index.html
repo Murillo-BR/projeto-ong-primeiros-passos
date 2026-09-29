@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONG Primeiros Passos</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="header-container">
+        <img src="../imagens/fachada.png" alt="Entrada da sede da ONG Primeiros Passos">
+
+        <nav class="nav-links">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+
+            <label for="menu-toggle" class="hamburguer-icon">
+                ☰
+            </label>
+
+            <div class="nav-links-lista">
+                <a href="index.html" data-link>
+                    Início
+                </a>
+
+                <div class="nav-item-dropdown">
+                    <a href="projetos" data-link>
+                        Nossos Projetos
+                    </a>
+
+                    <div class="dropdown-menu">
+                        <a href="projetos#voluntariado" data-link>
+                            Projeto Voluntariado
+                        </a>
+
+                        <a href="projetos#cases" data-link>
+                            Cases de Sucesso
+                        </a>
+                    </div>
+                </div>
+
+                <a href="cadastro" data-link>
+                    Cadastro
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="app"></main>
+
+    <footer class="footer-container">
+        <h2>Fale Conosco</h2>
+        <p>Telefone, WhatsApp, E-mail.</p>
+    </footer>
+    <script src="https://unpkg.com/imask"></script>
+    <script type="module" src="../js/script.js"></script>
+</body>
+
+</html>

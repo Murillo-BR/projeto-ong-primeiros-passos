@@ -1,0 +1,25 @@
+Todas as interações (botões e campos do formulário) foram tratados por meio de pseudo-classes, permitindo que o sistema comunique visualmente ao usuário o resultado de suas ações sem a necessidade de mensagens extensas em texto.
+
+Botões:
+
+Estado normal: 
+- o botão utiliza background-color: var(--cor-acao) (marrom), cor definida no design especificamente para ações de clique, com border-radius para suavizar as bordas e transition para que qualquer mudança de estado ocorra de forma gradual, e não abrupta;
+
+- :hover: ao passar o mouse sobre o botão, a cor de fundo muda para var(--cor-atencao) (verde claro), e é adicionada uma box-shadow (sombra), reforçando visualmente que o elemento é clicável;
+
+- :focus: quando o botão é selecionado via navegação por teclado (tecla Tab), é aplicado um outline na cor var(--cor-sucesso), com outline-offset para distanciá-lo levemente da borda do botão. Essa ação é importante para acessibilidade, garantindo que usuários que não utilizam mouse consigam identificar qual elemento está atualmente selecionado na página;
+
+- :active: no momento exato do clique, o botão tem uma leve redução de escala (transform: scale(0.97)) e muda para var(--cor-destaque) (verde escuro), simulando o efeito físico de "botão pressionado";
+
+- :disabled: quando o botão está desabilitado, a cor de fundo passa a var(--cor-caixa), a tonalidade é reduzida e o cursor muda para not-allowed, sinalizando claramente que a ação não está disponível no momento.
+
+Formulários:
+- :focus: ao clicar em um campo, a borda muda de cor e é adicionada uma sombra suave ao redor do input, indicando claramente qual campo está ativo no momento;
+
+- :valid: quando o valor digitado corresponde ao padrão esperado (atributos pattern e type), a borda do campo assume a cor var(--cor-sucesso), um verde claro e chamativo, criado especificamente na categoria de cores de feedback do design;
+
+- :invalid: caso o valor não corresponda ao formato exigido, a borda assume a cor var(--cor-erro) (vermelho), alertando o usuário sobre a necessidade de correção.
+
+Para evitar que os campos apareçam sinalizados como inválidos antes mesmo do usuário começar a preenchê-los, foi utilizada a combinação :not(:placeholder-shown), que garante que a validação visual (verde ou vermelho) só seja exibida depois que o campo tiver sido preenchido ou alterado.
+
+Essas combinações garantem uma comunicação visual intuitiva, reduzindo a necessidade de leitura de mensagens de erro extensas e tornando o preenchimento do formulário mais ágil e fácil, especialmente relevante para o público diverso que acessar a plataforma.

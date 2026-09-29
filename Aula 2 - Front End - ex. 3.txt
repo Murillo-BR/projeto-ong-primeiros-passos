@@ -1,0 +1,43 @@
+/* ===== FLEXBOX - HEADER ===== */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--espacamento-medio);
+}
+
+/* ===== FLEXBOX - FOOTER ===== */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--espacamento-medio);
+}
+
+/* ===== FLEXBOX - NAV ===== */
+.nav-links {
+  display: flex;
+  gap: var(--espacamento-medio);
+}
+
+/* ===== FLEXBOX - FORMULÁRIO ===== */
+.campo-formulario {
+  display: flex;
+  align-items: center;
+  gap: var(--espacamento-pequeno);
+}
+
+/* ===== FLEXBOX - ASIDE PATROCINADORES ===== */
+.aside-patrocinadores {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: var(--espacamento-pequeno);
+}
+
+@media (max-width: 480px) {
+  .aside-patrocinadores {
+    flex-direction: column;
+  }
+}
