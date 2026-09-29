@@ -1,3 +1,5 @@
+// Módulo responsável pelo armazenamento dos dados do formulário//
+
 export function salvarDadosFormulario(formulario) {
     const dadosFormulario = new FormData(formulario);
 
