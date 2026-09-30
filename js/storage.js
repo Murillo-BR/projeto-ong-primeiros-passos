@@ -1,4 +1,5 @@
-// Módulo responsável pelo armazenamento dos dados do formulário//
+// Módulo responsável por salvar, recuperar e remover
+// os dados temporários do formulário.
 
 export function salvarDadosFormulario(formulario) {
     const dadosFormulario = new FormData(formulario);
