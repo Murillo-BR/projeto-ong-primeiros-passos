@@ -1,3 +1,5 @@
+// Módulo responsável pelos dados e pela exibição dos projetos
+
 const projetosVoluntariado = [
     {
         titulo: 'Auxílio na cozinha para todos',

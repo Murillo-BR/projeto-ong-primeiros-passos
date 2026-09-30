@@ -1,3 +1,5 @@
+// Módulo responsável pela exibição e configuração do formulário
+
 import {
     salvarDadosFormulario,
     carregarDadosFormulario,
