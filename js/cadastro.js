@@ -10,7 +10,7 @@ export function renderCadastro(app) {
     app.innerHTML = `
         <h1>Cadastre-se</h1>
 
-        <form id="form-cadastro">
+        <form id="form-cadastro" novalidate>
 
             <fieldset>
                 <legend>Dados Pessoais</legend>
@@ -172,7 +172,7 @@ export function renderCadastro(app) {
 
             </fieldset>
 
-            <div class="alerta">
+            <div class="alerta" role="alert" aria-live="assertive">
                 <span>
                     Ops, ainda falta alguma informação em seu cadastro.
                 </span>
@@ -180,7 +180,7 @@ export function renderCadastro(app) {
                 <button
                     type="button"
                     class="alerta-fechar"
-                >
+                    aria-label="Fechar mensagem de alerta">
                     ×
                 </button>
             </div>
@@ -256,6 +256,13 @@ function configurarFormulario() {
 
             if (!formulario.checkValidity()) {
                 alerta.style.display = 'flex';
+
+                const primeiroCampoInvalido =
+                    formulario.querySelector('input:invalid');
+
+                if (primeiroCampoInvalido) {
+                    primeiroCampoInvalido.focus();
+                }
                 return;
             }
 
