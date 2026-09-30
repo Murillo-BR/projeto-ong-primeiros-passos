@@ -1,3 +1,5 @@
+// Módulo responsável pelo controle das rotas e navegação da SPA
+
 import { renderProjetos } from './projetos.js';
 import { renderCadastro } from './cadastro.js';
 
