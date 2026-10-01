@@ -1,0 +1,26 @@
+{
+  "name": "projeto-ong-primeiros-passos",
+  "version": "1.0.0",
+  "description": "Projeto front-end desenvolvido durante o processo de aprendizagem em desenvolvimento web, com o objetivo de aplicar na prática conceitos de HTML, CSS e JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Murillo-BR/projeto-ong-primeiros-passos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Murillo-BR/projeto-ong-primeiros-passos/issues"
+  },
+  "homepage": "https://github.com/Murillo-BR/projeto-ong-primeiros-passos#readme",
+  "devDependencies": {
+    "vite": "^8.3.2"
+  }
+}
