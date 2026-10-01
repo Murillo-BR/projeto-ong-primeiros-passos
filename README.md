@@ -47,41 +47,60 @@ A modularização foi realizada utilizando ES6 Modules, com `import` e `export`.
 
 ## Como executar o projeto localmente
 
-Este projeto não utiliza gerenciador de pacotes e, portanto, não é necessário executar comandos como `npm install`. A biblioteca IMask é carregada diretamente por CDN no arquivo HTML.
-
-Para executar o projeto localmente:
+O projeto utiliza o Vite como ferramenta de desenvolvimento e build. Para executá-lo localmente:
 
 1. Clone o repositório:
 
-   ```bash
    git clone https://github.com/Murillo-BR/projeto-ong-primeiros-passos.git
-   ```
 
 2. Acesse a pasta do projeto:
 
-   ```bash
    cd projeto-ong-primeiros-passos
-   ```
 
-3. Abra o projeto em um editor de código, como o Visual Studio Code.
+3. Instale as dependências:
 
-4. Execute a aplicação utilizando um servidor local.
+   npm install
 
-5. Acesse no navegador o endereço fornecido pelo servidor local.
+4. Inicie o servidor de desenvolvimento:
 
-> Por utilizar ES6 Modules e navegação SPA, recomenda-se executar o projeto por meio de um servidor local em vez de abrir diretamente o arquivo HTML pelo sistema de arquivos.
+   npm run dev
+
+5. Acesse no navegador o endereço fornecido pelo Vite.
+
+A biblioteca IMask continua sendo carregada por CDN para aplicação das máscaras nos campos do formulário.
 
 ## Build e testes
 
-O projeto não possui processo de build, pois foi desenvolvido diretamente com HTML, CSS e JavaScript, sem utilização de ferramentas de build ou frameworks.
+O projeto utiliza Vite para preparar a aplicação para produção. O comando:
 
-Também não foi implementado um conjunto de testes automatizados. Durante o desenvolvimento, as funcionalidades foram verificadas manualmente no navegador, incluindo navegação, preenchimento e validação do formulário, máscaras dos campos e persistência dos dados no `localStorage`.
+    npm run build
+
+gera a versão otimizada na pasta `dist`, incluindo a minificação dos recursos utilizados pela aplicação.
+
+Para visualizar localmente a versão de produção gerada, pode ser utilizado:
+
+    npm run preview
+
+Durante o desenvolvimento, foram realizados testes manuais no navegador, incluindo navegação SPA, menu responsivo, navegação por teclado, formulário, validação dos campos, máscaras, persistência no `localStorage` e funcionamento das rotas.
+
+A imagem principal também foi otimizada para produção, com conversão de PNG para WebP e adequação de sua resolução ao tamanho de exibição.
 
 ## Validação do código
 
 Durante o desenvolvimento, os códigos HTML e CSS foram verificados utilizando as ferramentas de validação do W3C (World Wide Web Consortium).
 
 A validação foi utilizada para identificar possíveis erros na estrutura do HTML e nas regras de CSS, contribuindo para a revisão e melhoria do código desenvolvido.
+
+## Deploy
+
+A aplicação está publicada na Vercel e integrada ao repositório GitHub.
+
+A branch `master` é utilizada como fonte da versão de produção. Quando novas alterações são integradas a essa branch, a Vercel executa automaticamente um novo processo de build e deploy.
+
+O arquivo `vercel.json` configura o redirecionamento necessário para o funcionamento das rotas da SPA em acessos diretos e atualizações de página.
+
+Aplicação publicada:
+https://projeto-ong-primeiros-passos.vercel.app/
 
 ## Versionamento
 
