@@ -5,9 +5,7 @@ import { renderCadastro } from './cadastro.js';
 
 export function iniciarRotas(app) {
 
-    const BASE_PATH = window.location.pathname
-        .replace(/\/index\.html$/, '')
-        .replace(/\/$/, '');
+    const BASE_PATH = '';
 
     const routes = {
         '/': renderInicio,
